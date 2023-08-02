@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Header() {
   return (
     <div className="z-10 w-full max-w-7xl items-center font-mono text-sm lg:flex">
-        <div className="fixed h-16 sm:h-20 lg:h-[52px] left-0 top-0 text-center w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 hover:dark:border-neutral-700 transition ease-in dark:bg-zinc-800/30 dark:from-inherit lg:static lg:relative lg:rounded-full lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+        <div className="fixed mb-4 h-16 sm:h-20 lg:h-[52px] left-0 top-0 text-center w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 hover:dark:border-neutral-700 transition ease-in dark:bg-zinc-800/30 dark:from-inherit lg:static lg:relative lg:rounded-full lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
             <div className="flex flex-row items center justify-center gap-2">
                 <p className='hidden sm:block'>
                     Welcome to the Next.js Django
