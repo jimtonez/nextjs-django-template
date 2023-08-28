@@ -1,15 +1,13 @@
-import Image from 'next/image'
 import Header from '@/components/Header'
-import Cards from '@/components/Cards'
+import Pods from '@/components/Pods'
 import Footer from '@/components/Footer'
-import SignIn from '@/components/SignIn'
 
 export default function Home() {
   return (
-    <main className="flex relative min-h-screen flex-col items-center justify-between my-24 md:my-0 md:pb-16 lg:p-10">
+    <main className="flex relative min-h-screen flex-col items-center justify-around my-24 pb-8 md:pb-28 md:my-0">
       <>
         <Header />
-        <Cards />
+        <Pods />
         <Footer />
       </>
     </main>
