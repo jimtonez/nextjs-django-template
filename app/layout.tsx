@@ -18,11 +18,11 @@ export default async function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <body>
-        <AuthContext session={session}>
-            {children}
-        </AuthContext>
-      </body>
+        <body>
+          <AuthContext session={session}>
+              {children}
+          </AuthContext>
+        </body>
     </html>
   )
 }

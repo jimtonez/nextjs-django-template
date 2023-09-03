@@ -23,23 +23,24 @@ function SignInComponent({ providers }: Props) {
     }
 
     return (
-        <div className="mx-auto py-12 px-6 sm:p-20 xl:w-10/12">
-          <div className="flex items-center justify-center">
+        <div className="mx-auto py-12 px-6 sm:p-20 w-11/12 md:w-10/12">
+          <div className="flex flex-col items-center justify-center">
             <span className="emoji text-3xl" role="img" aria-label="rocket"></span>
-            <p className="text-4xl text-white font-bold pl-3 cursor-default">Nextjs Django</p>
+            <p className="text-3xl sm:text-3xl text-zinc-900 dark:text-white font-extrabold pl-3 cursor-default">Next.js Django</p>
+            <p className="text-3xl sm:text-3xl text-yellow-500 dark:text-yellow-600 font-extrabold pl-3 cursor-default">Golden Path Template</p>
           </div>
         <div role="hidden" className="mt-12 border-t border-gray-700">
-            <span className="block w-max mx-auto -mt-3 px-4 text-center text-teal-400 border border-teal-400 bg-zinc-900 rounded-full">Sign in with</span>
+            <span className="block w-max mx-auto -mt-3 px-4 text-center text-teal-400 border border-teal-400 bg-gray-50 dark:bg-zinc-900 rounded-full">Sign in with</span>
         </div>
         <div className="mt-12 grid grid-cols-1 space-y-4 mb-12">
           {Object.values(providers!).map((provider) => (
-            <button key={provider.id} className="py-3 px-6 w-full bg-inherit border border-yellow-600 hover:border-gray-700 hover:bg-zinc-900/30 shadow-lg shadow-black rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: "/profile"})}>
+            <button key={provider.id} className="py-3 px-6 w-full bg-gray-50 dark:bg-inherit border border-yellow-500 dark:border-yellow-600 hover:border-gray-300 hover:dark:border-gray-600 hover:bg-inherit shadow-sm shadow-gray-300 dark:shadow-black rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: "/profile"})}>
               <div className="flex w-full items-center justify-center space-x-4">
                 <div className="flex w-1/4 items-center justify-center">
                   {renderIcon(provider.name)}
                 </div>
                 <div className="flex w-3/4 items-center justify-start">
-                <span className="font-medium text-md text-white">{provider.name}</span>
+                <span className="font-medium text-md text-gray-600 dark:text-white">{provider.name}</span>
                 </div>
               </div>
             </button>

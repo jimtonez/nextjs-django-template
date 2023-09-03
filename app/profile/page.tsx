@@ -1,6 +1,8 @@
+"use client"
 import { getProviders } from "next-auth/react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "next-themes";
 
 async function Profile() {
 
@@ -8,11 +10,11 @@ async function Profile() {
 
     return (
         <main className="flex relative min-h-screen flex-col items-center justify-between my-24 md:my-0 md:pb-16 lg:p-10">
-        <>
-          <Header />
-          <Footer />
-        </>
-      </main>
+            <ThemeProvider enableSystem={true} attribute='class'>
+                <Header />
+                <Footer />
+            </ThemeProvider>
+        </main>
     )
   }
   
