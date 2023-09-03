@@ -3,7 +3,7 @@ import { CgLogOut, CgMenuRight } from "react-icons/cg";
 import { getProviders, useSession, signIn, signOut } from "next-auth/react"
 
 
-export default function SignOut () {
+export default function Menu() {
 
     const { data: session } = useSession();
 
