@@ -34,7 +34,7 @@ function SignInComponent({ providers }: Props) {
         </div>
         <div className="mt-12 grid grid-cols-1 space-y-4 mb-12">
           {Object.values(providers!).map((provider) => (
-            <button key={provider.id} className="py-3 px-6 w-full bg-gray-50 dark:bg-inherit border border-yellow-500 dark:border-yellow-600 hover:border-gray-300 hover:dark:border-gray-600 hover:bg-inherit shadow-sm shadow-gray-300 dark:shadow-black rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: "/profile"})}>
+            <button key={provider.id} className="py-3 px-6 w-full bg-gray-50 dark:bg-inherit border border-yellow-500 dark:border-yellow-600 hover:border-gray-300 hover:dark:border-gray-600 hover:bg-inherit shadow-sm shadow-gray-300 dark:shadow-black rounded-lg" onClick={() => signIn(provider.id, { callbackUrl: "/services"})}>
               <div className="flex w-full items-center justify-center space-x-4">
                 <div className="flex w-1/4 items-center justify-center">
                   {renderIcon(provider.name)}

@@ -39,9 +39,9 @@ function Header() {
     }
 
     return (
-        <div className="z-10 flex fixed top-16 md:w-3/4 items-center font-mono text-sm">
+        <div className="z-10 flex fixed top-4 md:w-3/4 lg:w-full lg:px-20 xl:px-40 items-center font-mono text-sm">
             <div className="fixed mb-4 h-20 lg:h-[52px] left-0 top-0 text-center w-full border-b border-gray-200 dark:bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-900/30 dark:from-inherit lg:static lg:relative lg:rounded-full lg:border lg:p-4 lg:dark:bg-zinc-800/30">
-                <div className="flex flex-row items center justify-center gap-2">
+                <div className="flex flex-row text-base items center justify-center gap-2">
                     <p className='hidden md:block'>
                         Welcome to the Next.js Django
                     </p>
